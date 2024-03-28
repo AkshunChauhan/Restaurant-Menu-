@@ -1,63 +1,95 @@
+
+
+/* Container for logo and navigation */
+
+
+/* Header styling */
 .header {
-  background: white;
+  background: #FFA500;
   padding: 0;
-  border-bottom: 1px solid #e72929;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
 
+/* Link styling */
 .header a {
-  color: #af1313;
+  color: #000000;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
+/* Hover effect on links */
 .header a:hover {
-  background: #e72929;
-  color: white;
+  background: #FFD68A;
+  color: #090000; /* Darken text color on hover */
   cursor: pointer;
 }
 
+/* Container for logo and navigation */
 .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Vertically center items */
 }
 
+/* Logo styling */
 .logo {
   font-weight: bold;
   padding: 1rem;
+  font-size: 1.5rem; /* Increase font size */
 }
 
+/* Navigation menu styling */
 .header ul {
   display: flex;
   list-style-type: none;
   margin: 0;
 }
 
+/* Individual menu item styling */
 .header ul a {
   padding: 1rem;
   display: inline-block;
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 1px; /* Add letter spacing */
 }
 
+/* Dropdown menu container */
 .menu_container {
   position: relative;
 }
 
+/* Dropdown menu styling */
 .menu {
   position: absolute;
+  top: 100%; /* Position below the menu container */
+  left: 0;
   z-index: 1001;
-  background-color: whitesmoke;
+  background-color: #FFA500;
   display: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
 }
 
+/* Show dropdown menu on hover */
 .menu_container:hover .menu {
   display: block;
 }
 
+/* Individual dropdown menu item styling */
 .menu a {
   width: 100%;
   min-width: 8rem;
+  display: block;
+  padding: 0.75rem 1rem; /* Adjust padding */
+  text-align: center; /* Center-align text */
 }
 
+/* Styling for the cart count badge */
 .cart_count {
-  background-color: #ff4d4d;
+  background-color: #f33211;
   color: white;
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;

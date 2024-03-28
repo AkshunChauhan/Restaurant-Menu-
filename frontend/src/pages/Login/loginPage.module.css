@@ -21,3 +21,20 @@
   justify-content: center;
   align-items: center;
 }
+.container button {
+  height: 3.5rem; /* Adjust button height */
+  width: 6rem; /* Adjust button width */
+  font-size: 1.1rem; /* Adjust font size */
+  border-radius: 2rem; /* Adjust border radius */
+  border: none;
+  background-color: #f33211; /* Set button background color */
+  color: white;
+  opacity: 0.9; /* Adjust opacity */
+  outline: none;
+}
+
+.container button:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #e8540a; /* Darker red on hover */
+}
